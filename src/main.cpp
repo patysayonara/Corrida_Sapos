@@ -321,7 +321,8 @@ int main(){
 				transicao = (*item2)->getEmpates();
 				transicao++;
 				(*item2)->setEmpates(transicao);
-			    } else if((*item2)->getRanking() == 1){ /**@brief Determina a vitoria da corrida*/
+			    } 
+			    if((*item2)->getRanking() == 1){ /**@brief Determina a vitoria da corrida*/
 				transicao = (*item2)->getVitorias();
                                 transicao++;
                                 (*item2)->setVitorias(transicao);
